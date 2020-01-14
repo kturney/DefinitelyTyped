@@ -433,6 +433,9 @@ export namespace Ember {
         const logger: typeof Logger;
         function log(level: string, str: string): void;
         function registerHelper(name: string, helper: any): void;
+        namespace Utils {
+          function escapeExpression(string: any): string;
+        }
     }
     namespace String {
         const camelize: typeof EmberStringNs.camelize;
